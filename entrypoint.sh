@@ -12,7 +12,7 @@ fi
 wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/obsutil_linux_amd64.tar.gz
 tar -xzvf obsutil_linux_amd64.tar.gz
 cd obsutil_linux_amd64_5.3.4
-chmod 777 obsutil
+chmod 755 obsutil
 # source setup.sh /github/workspace/obsutil_linux_amd64_5.3.4/obsutil
 ls -al
 ./obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.cn-north-4.myhuaweicloud.com  
