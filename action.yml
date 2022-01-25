@@ -2,13 +2,12 @@
 name: 'Chenyt26 Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  access_key:
+    description: "The name of the storage account container these assets will be uploaded to"
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  secret_key:
+    description: "The name of the directory you want to upload"
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
