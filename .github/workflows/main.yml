@@ -10,9 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Upload To OBS Test
-        uses: Chenyt26/hello-world-docker-action@v0.2
+        uses: ./
         id: obs
         with:
           access_key: ${{ secrets.ACCESSKEY }}
           secret_key: ${{ secrets.SECRETACCESSKEY }}
-          file_path: gradlew
+          file_path: README.md
