@@ -18,7 +18,7 @@ tar -xzvf obsutil_linux_amd64.tar.gz
 chmod 755 obsutil_linux_amd64_5.3.4/obsutil
 ls -al
 ./obsutil_linux_amd64_5.3.4/obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.cn-north-4.myhuaweicloud.com  
-./obsutil_linux_amd64_5.3.4/obsutil cp README.md obs://hdn-github-action/ -f -r
+./obsutil_linux_amd64_5.3.4/obsutil cp ${INPUT_FILE_PATH} obs://hdn-github-action/ -f -r
 
 #cd /usr/local
 #wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/obsutil_linux_amd64.tar.gz
