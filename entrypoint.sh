@@ -13,6 +13,7 @@ wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/obsu
 tar -xzvf obsutil_linux_amd64.tar.gz
 cd obsutil_linux_amd64_5.3.4
 chmod 777 obsutil
+cat setup.sh
 ls -al
 pwd
 source setup.sh obsutil
