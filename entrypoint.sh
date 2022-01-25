@@ -12,6 +12,7 @@ fi
 wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/obsutil_linux_amd64.tar.gz
 tar -xzvf obsutil_linux_amd64.tar.gz
 cd obsutil_linux_amd64_5.3.4
+ls -al
 chmod 755 obsutil
 ./obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.cn-north-4.myhuaweicloud.com  
 ./obsutil cp ${{ github.workspace }}/README.md obs://hdn-github-action/ -f -r
