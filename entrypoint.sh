@@ -17,4 +17,3 @@ ls -al
 pwd
 ./obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.cn-north-4.myhuaweicloud.com  
 ./obsutil cp ${{ github.workspace }}/README.md obs://hdn-github-action/ -f -r
-
