@@ -8,8 +8,9 @@ inputs:
   secret_key:
     description: "The name of the directory you want to upload"
     required: true
+   file_path:
+    description: "The name of the directory you want to upload"
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
