@@ -9,10 +9,10 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
-        id: hello
+      - name: Upload To OBS Test
+        uses: Chenyt26/hello-world-docker-action@v0.2
+        id: obs
         with:
           access_key: ${{ secrets.ACCESSKEY }}
           secret_key: ${{ secrets.SECRETACCESSKEY }}
-          file_path: action.yml
+          file_path: gradlew
