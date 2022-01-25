@@ -16,7 +16,7 @@ chmod 777 obsutil
 cat setup.sh
 ls -al
 pwd
-source setup.sh obsutil
+source setup.sh /github/workspace/obsutil_linux_amd64_5.3.4/obsutil
 ls -al /
 ./obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.cn-north-4.myhuaweicloud.com  
 ./obsutil cp ${{ github.workspace }}/README.md obs://hdn-github-action/ -f -r
