@@ -14,6 +14,7 @@ tar -xzvf obsutil_linux_amd64.tar.gz
 cd obsutil_linux_amd64_5.3.4
 chmod 755 obsutil
 ls -al
-obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.cn-north-4.myhuaweicloud.com  
-obsutil cp ${{ github.workspace }}/README.md obs://hdn-github-action/ -f -r
+pwd
+./obsutil config -i=${INPUT_ACCESS_KEY} -k=${INPUT_SECRET_KEY} -e=obs.cn-north-4.myhuaweicloud.com  
+./obsutil cp ${{ github.workspace }}/README.md obs://hdn-github-action/ -f -r
 
