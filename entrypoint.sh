@@ -8,6 +8,7 @@ if [ -z "$INPUT_SECRET_KEY" ]; then
   echo "sk is not set. Quitting."
   exit 1
 fi
+yum -y install wget
 
 wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/obsutil_linux_amd64.tar.gz
 tar -xzvf obsutil_linux_amd64.tar.gz
