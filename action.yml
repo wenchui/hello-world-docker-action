@@ -1,6 +1,6 @@
 # action.yml
-name: 'Upload To OBS Test'
-description: 'Greet someone and record the time'
+name: 'OBS upload case'
+description: 'OBS upload case'
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
